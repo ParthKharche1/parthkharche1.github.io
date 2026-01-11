@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="📄 Read Project Paper OverviewDesigned a high-torque, compact rotary actuator for robotic joints. This project solves the “Length vs. Torque” trade-off by integrating two complementarygear technologi">
+<meta property="og:type" content="website">
+<meta property="og:title" content="106:1 Hybrid Planetary-Cycloidal Actuator">
+<meta property="og:url" content="http://example.com/projects/actuator.html">
+<meta property="og:site_name" content="Parth Kharche">
+<meta property="og:description" content="📄 Read Project Paper OverviewDesigned a high-torque, compact rotary actuator for robotic joints. This project solves the “Length vs. Torque” trade-off by integrating two complementarygear technologi">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/assets/act_w_case.png">
+<meta property="og:image" content="http://example.com/assets/act_w_case.png">
+<meta property="og:image" content="http://example.com/assets/planetary_gearbox.png">
+<meta property="og:image" content="http://example.com/assets/cycloidal_gearbox.png">
+<meta property="og:image" content="http://example.com/assets/cycloidal_disk.png">
+<meta property="og:image" content="http://example.com/assets/act_nocase.png">
+<meta property="article:published_time" content="2026-02-01T00:00:00.000Z">
+<meta property="article:modified_time" content="2026-01-11T11:04:07.097Z">
+<meta property="article:author" content="Parth Kharche">
+<meta property="article:tag" content="Robotics, ROS 2, Autonomous Navigation, Mechanical Engineering, Deep Learning">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/assets/act_w_case.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>106:1 Hybrid Planetary-Cycloidal Actuator</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+    <div class="content index py4 ">
+        
+          <header id="header">
+  <a class="u-url u-uid" href="/">
+  
+    
+      <img id="logo" alt class="u-logo" src="/images/logo.png" />
+    
+  
+    <div id="title">
+      <h1 class="p-name">Parth Kharche</h1>
+    </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-2x"></i></a>
+      </li>
+      <!--
+     --><li><a href="/">Home</a></li><!--
+   --><!--
+     --><li><a href="/certifications/">Certifications</a></li><!--
+   --><!--
+     --><li><a href="/projects/">Projects</a></li><!--
+   --><!--
+     --><li><a href="/assets/Parth_Kharche_Resume.pdf">Resume</a></li><!--
+   -->
+    </ul>
+  </div>
+</header>
+
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  
+
+  <div class="content" itemprop="articleBody">
+      
+          <p><img src="/assets/act_w_case.png" alt="Actuator"></p>
+<p><a href="/assets/actuator_paper.pdf"><strong>📄 Read Project Paper</strong></a></p>
+<h3 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h3><p>Designed a high-torque, compact rotary actuator for robotic joints. This project solves the “Length vs. Torque” trade-off by integrating two complementary<br>gear technologies into a single compact module, achieving high reduction in a short<br>axial form factor.</p>
+<p><strong>Status:</strong> Ongoing (FEA Analysis &amp; Thermal Characterization in ANSYS)</p>
+<h3 id="⚙️-Architecture-The-“Two-Stage”-Approach"><a href="#⚙️-Architecture-The-“Two-Stage”-Approach" class="headerlink" title="⚙️ Architecture: The “Two-Stage” Approach"></a>⚙️ Architecture: The “Two-Stage” Approach</h3><p>To achieve a massive <strong>105.88:1 reduction ratio</strong> in a pancake form factor, I utilized a hybrid architecture:</p>
+<ul>
+<li><strong>Stage 1 (Pre-Stage):</strong> A <strong>Planetary Gearbox (4.235:1)</strong> handles the high-speed input. It reduces vibration and thermal buildup from the motor. Vibration and thermal buildup is undesirable at the output stage.</li>
+<li><strong>Stage 2 (Output):</strong> A <strong>Cycloidal Drive (25:1)</strong> handles the high-torque output. It provides shock-load resistance by distributing force across 30% of the pins simultaneously. Improves shock-load resistance and fatigue life.</li>
+</ul>
+<h3 id="📐-Key-Specifications"><a href="#📐-Key-Specifications" class="headerlink" title="📐 Key Specifications"></a>📐 Key Specifications</h3><ul>
+<li><strong>Total Ratio:</strong> 105.88:1</li>
+<li><strong>Shortening Parameter (S):</strong> 0.591 (Optimized for smooth manufacturing and to balance smooth cycloidal motion).</li>
+<li><strong>Applications:</strong> Exoskeletons, Quadruped Legs, and Cobot Joints.</li>
+</ul>
+<h3 id="🎥-Motion-Analysis"><a href="#🎥-Motion-Analysis" class="headerlink" title="🎥 Motion Analysis"></a>🎥 Motion Analysis</h3><p>I have attached videos demonstrating the actuator’s performance.</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/10dC3FhRzrGxlNu7rkHRfcILJe5NCJZu0/view?usp=sharing"><strong>▶️ Actuator Demo (1000 RPM) (Google Drive)</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1K1U2UPy8MVp0xbVflJLfO8QJ__MQIWCF/view?usp=sharing"><strong>▶️ Actuator Demo with casing (1000 RPM) (Google Drive)</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/14gd3RTDvLSKi8kKNvcgijnAjQF0RaAXe/view?usp=sharing"><strong>▶️ 50 RPM Test (Google Drive)</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1IISqQ7cQcL8LGZeYb0tOSYifWZhD_eJD/view?usp=sharing"><strong>▶️ Fixed Housing Test (Google Drive)</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1Cx2aPdSVYcz2jcEFpbO4ZhH3-r52mGmI/view?usp=sharing"><strong>▶️ Fixed Output Test (Google Drive)</strong></a></li>
+</ol>
+<h3 id="📸-Component-Gallery"><a href="#📸-Component-Gallery" class="headerlink" title="📸 Component Gallery"></a>📸 Component Gallery</h3><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/assets/act_w_case.png" alt="Assembly"> <br> <em>Actuator Assembly</em></td>
+<td align="center"><img src="/assets/planetary_gearbox.png" alt="Planetary Gearbox"> <br> <em>Planetary Stage</em></td>
+</tr>
+<tr>
+<td align="center"><img src="/assets/cycloidal_gearbox.png" alt="Cycloidal Gearbox"> <br> <em>Cycloidal Stage</em></td>
+<td align="center"><img src="/assets/cycloidal_disk.png" alt="Cycloidal Disk"> <br> <em>Cycloidal Disc</em></td>
+</tr>
+<tr>
+<td align="center"><img src="/assets/act_nocase.png" alt="Internal Mechanism"> <br> <em>Internal Mechanism</em></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="💻-Current-Work-FEA"><a href="#💻-Current-Work-FEA" class="headerlink" title="💻 Current Work (FEA)"></a>💻 Current Work (FEA)</h3><p>Currently performing <strong>Finite Element Analysis (FEA)</strong> to simulate stress distribution on the cycloidal lobes under shock loads.</p>
+
+        
+  </div>
+</article>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2026
+    Parth Kharche
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/certifications/">Certifications</a></li><!--
+     --><!--
+       --><li><a href="/projects/">Projects</a></li><!--
+     --><!--
+       --><li><a href="/assets/Parth_Kharche_Resume.pdf">Resume</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
