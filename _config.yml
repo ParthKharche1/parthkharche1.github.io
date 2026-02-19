@@ -1,0 +1,26 @@
+title: Parth Kharche
+description: Mechanical Engineering @ COEP | Robotics | Physical AI
+remote_theme: probberechts/jekyll-cactus-theme
+
+# Navigation
+nav:
+  - title: home
+    url: /
+  - title: certifications
+    url: /certifications/
+  - title: projects
+    url: /projects/
+  - title: resume
+    url: /assets/Parth_Kharche_Resume.pdf
+
+# Social links (Cactus theme style)
+social:
+  - name: envelope
+    link: mailto:parthkharche01@gmail.com
+  - name: linkedin
+    link: https://www.linkedin.com/in/parth-kharche-b5a992293/
+  - name: github
+    link: https://github.com/ParthKharche1
+
+# For Japanese character support
+encoding: "utf-8"
